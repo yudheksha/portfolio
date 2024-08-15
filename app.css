@@ -157,7 +157,7 @@ section {
 }
 
 .btn-box .btn:nth-child(2):hover {
-    color: var(--bg-color);
+    color: var (--bg-color);
 }
 
 .btn-box .btn:nth-child(2)::before {
@@ -165,7 +165,7 @@ section {
 }
 
 .btn-box .btn::before {
-    content: '';;
+    content: '';
     position: absolute;
     top: 0;
     left: 0;
@@ -401,8 +401,6 @@ span {
     margin-left: 2rem; /* Indents lists for clarity */
 }
 
-
-
 .tech-stack {
     background: var(--second-bg-color);
     padding: 5rem 9%; /* Adjust padding as needed */
@@ -452,7 +450,6 @@ span {
         grid-template-columns: 1fr;
     }
 }
-
 
 .skills {
     min-height: auto;
@@ -517,7 +514,7 @@ span {
 .skills-content .progress .bar {
     height: 2.5rem;
     border-radius: .6rem;
-    border: .2rem solid var(--main-color);
+    border: .2rem solid var (--main-color);
     padding: .5rem;
     margin: 1rem 0;
 }
@@ -544,7 +541,6 @@ span {
 .skills-column:nth-child(1) .skills-content .progress:nth-child(4) .bar span {
     width: 85%;
 }
-
 
 .skills-column:nth-child(2) .skills-content .progress:nth-child(1) .bar span {
     width: 85%;
@@ -589,6 +585,10 @@ span {
 
 .portfolio-box img {
     width: 100%;
+    height: 200px; /* Set a fixed height for all images */
+    object-fit: cover; /* Ensures the image covers the box without distortion */
+    display: block;
+    border-radius: 15px; /* Align with .portfolio-box */
     transition: .5s ease; 
 }
 
@@ -667,15 +667,52 @@ span {
     }
 }
 
-/* Ensure the image covers the box properly */
-.portfolio-box img {
-    width: 100%;
-    height: auto;
-    display: block;
-    border-radius: 15px; /* Align with .portfolio-box */
-    object-fit: cover; /* Cover the area without losing aspect ratio */
+@media (max-width: 768px) {
+    .portfolio-container {
+        grid-template-columns: repeat(1, 1fr); /* Single column for mobile screens */
+    }
 }
 
+.publication-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 2.5rem;
+    padding: 0 5rem; /* Adjust padding as needed */
+}
+
+.publication-box {
+    background: var(--second-bg-color); /* Optional: gives a background to the boxes */
+    border-radius: 15px; /* Rounded corners */
+    overflow: hidden;
+    transition: transform .3s ease-in-out; /* Smooth transform effect */
+}
+
+.publication-box img {
+    width: 100%;
+    height: 200px; /* Set a fixed height for all publication images */
+    object-fit: cover; /* Ensures the image covers the box without distortion */
+    display: block;
+    border-radius: 15px; /* Align with .publication-box */
+    transition: .5s ease; 
+}
+
+.publication-box:hover img {
+    transform: scale(1.1);
+}
+
+@media (max-width: 1024px) {
+    .publication-container {
+        grid-template-columns: repeat(2, 1fr); /* Two columns for smaller screens */
+    }
+}
+
+@media (max-width: 768px) {
+    .publication-container {
+        grid-template-columns: repeat(1, 1fr); /* Single column for mobile screens */
+    }
+}
 
 .contact {
     /* min-height: 80vh; */
@@ -923,7 +960,24 @@ span {
         width: 5rem;
         height: 5rem;
     }
-} 
+
+    .publication-container {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .publication-layer h4 {
+        font-size: 2.25rem;
+    }
+
+    .publication-layer p {
+        font-size: 1.5rem;
+    }
+
+    .publication-layer a {
+        width: 5rem;
+        height: 5rem;
+    }
+}
 
 @media (max-width: 654px) {
     html {
@@ -951,6 +1005,30 @@ span {
     }
 
     .portfolio-layer a i {
+        font-size: 3rem;
+    }
+
+    .publication-container {
+        grid-template-columns: repeat(1, 1fr);
+        gap: 5rem;
+    }
+
+    .publication-layer h4 {
+        font-size: 2.5rem;
+    }
+    
+    .publication-layer p {
+        margin-top: 2rem;
+        font-size: 2rem;
+    }
+
+    .publication-layer a {
+        margin-top: 3.5rem;
+        width: 6rem;
+        height: 6rem;
+    }
+
+    .publication-layer a i {
         font-size: 3rem;
     }
 }
