@@ -124,7 +124,7 @@ section {
     position: relative;
     display: flex;
     justify-content: space-between;
-    width: 34.5rem;
+    width: 52rem; /* Adjusted width to fit three buttons */
     height: 5rem;
 }
 
@@ -149,7 +149,7 @@ section {
 
 .btn-box .btn:hover {
     color: var(--main-color);
-} 
+}
 
 .btn-box .btn:nth-child(2) {
     background: transparent;
@@ -157,7 +157,7 @@ section {
 }
 
 .btn-box .btn:nth-child(2):hover {
-    color: var (--bg-color);
+    color: var(--bg-color);
 }
 
 .btn-box .btn:nth-child(2)::before {
