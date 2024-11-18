@@ -135,17 +135,18 @@ section {
     align-items: center;
     width: 15rem;
     height: 100%;
-    background: var(--main-color);
-    border: .2rem solid var(--main-color);
+    background: var(--main-color); /* Ensures dark blue fill */
+    border: .2rem solid var(--main-color); /* Matches background for consistency */
     border-radius: .8rem;
     font-size: 1.8rem;
     font-weight: 600;
     letter-spacing: .1rem;
-    color: var(--bg-color);
+    color: var(--bg-color); /* White text */
     z-index: 1;
     overflow: hidden;
     transition: .5s;
 }
+
 
 .btn-box .btn:hover {
     color: var(--main-color);
