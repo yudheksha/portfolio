@@ -62,9 +62,7 @@ const typed = new Typed(".multiple-text", {
   strings: [
     "Coder",
     "Software Developer",
-    "Full Stack Developer",
     "Data Analyst",
-    "Machine Learning Engineer",
   ],
 
   typeSpeed: 100,
