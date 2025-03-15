@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap'); 
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap");
 
 * {
     margin: 0;
@@ -8,14 +8,18 @@
     border: none;
     outline: none;
     scroll-behavior: smooth;
-    font-family: 'Poppins', sans-serif;
+    font-family: "Poppins", sans-serif;
 }
 
 :root {
-    --bg-color: #ffffff; /* White background */
-    --second-bg-color: #FFAFCC; /* Light gray background */
-    --text-color: #000000; /* Black text color */
-    --main-color: #0d1b2a; /* Dark blue for accents */
+    --bg-color: #ffffff;
+    /* White background */
+    --second-bg-color: #ffafcc;
+    /* Light gray background */
+    --text-color: #000000;
+    /* Black text color */
+    --main-color: #0d1b2a;
+    /* Dark blue for accents */
 }
 
 html {
@@ -54,10 +58,11 @@ body {
     color: var(--text-color);
     font-weight: 500;
     margin-left: 3.5rem;
-    transition: .3s;
+    transition: 0.3s;
 }
 
-.navbar a:hover, .navbar a.active {
+.navbar a:hover,
+.navbar a.active {
     color: var(--main-color);
 }
 
@@ -81,7 +86,7 @@ section {
     justify-content: space-between;
 }
 
-.my-img { 
+.my-img {
     display: flex;
     justify-content: center;
     width: 40rem;
@@ -104,7 +109,6 @@ section {
 }
 
 .home-content .text-animate {
-    
     font-size: 3.2rem;
 }
 
@@ -124,7 +128,8 @@ section {
     position: relative;
     display: flex;
     justify-content: space-between;
-    width: 52rem; /* Adjusted width to fit three buttons */
+    width: 52rem;
+    /* Enough space for three buttons */
     height: 5rem;
 }
 
@@ -135,50 +140,44 @@ section {
     align-items: center;
     width: 15rem;
     height: 100%;
-    background: var(--main-color); /* Ensures dark blue fill */
-    border: .2rem solid var(--main-color); /* Matches background for consistency */
-    border-radius: .8rem;
+    background: transparent;
+    /* Transparent background */
+    border: 0.2rem solid var(--main-color);
+    /* Border matches your main color */
+    border-radius: 0.8rem;
     font-size: 1.8rem;
     font-weight: 600;
-    letter-spacing: .1rem;
-    color: var(--bg-color); /* White text */
+    letter-spacing: 0.1rem;
+    color: var(--main-color);
+    /* Text is your main color by default */
     z-index: 1;
     overflow: hidden;
-    transition: .5s;
+    transition: 0.5s;
 }
-
 
 .btn-box .btn:hover {
-    color: var(--main-color);
-}
-
-.btn-box .btn:nth-child(2) {
-    background: transparent;
-    color: var(--main-color);
-}
-
-.btn-box .btn:nth-child(2):hover {
     color: var(--bg-color);
+    /* Text turns white (or whatever --bg-color is) on hover */
 }
 
-.btn-box .btn:nth-child(2)::before {
-    background: var(--main-color);
-}
-
+/* The “grow” background effect on hover */
 .btn-box .btn::before {
-    content: '';
+    content: "";
     position: absolute;
     top: 0;
     left: 0;
     width: 0;
     height: 100%;
-    background: var(--bg-color);
+    background: var(--main-color);
+    /* Fill with your main color */
     z-index: -1;
-    transition: .5s;
+    /* Hide behind the text */
+    transition: 0.5s;
 }
 
 .btn-box .btn:hover::before {
     width: 100%;
+    /* Expands left-to-right on hover */
 }
 
 .home-sci {
@@ -198,13 +197,13 @@ section {
     width: 40px;
     height: 40px;
     background: transparent;
-    border: .2rem solid var(--main-color);
+    border: 0.2rem solid var(--main-color);
     border-radius: 50%;
     font-size: 20px;
     color: var(--main-color);
     z-index: 1;
     overflow: hidden;
-    transition: .5s;
+    transition: 0.5s;
 }
 
 .home-sci a:hover {
@@ -212,7 +211,7 @@ section {
 }
 
 .home-sci a::before {
-    content: '';
+    content: "";
     position: absolute;
     top: 0;
     left: 0;
@@ -220,7 +219,7 @@ section {
     height: 100%;
     background: var(--main-color);
     z-index: -1;
-    transition: .5s;
+    transition: 0.5s;
 }
 
 .home-sci a:hover::before {
@@ -265,7 +264,7 @@ span {
 .about-img img {
     width: 90%;
     border-radius: 50%;
-    border: .2rem solid var(--main-color);
+    border: 0.2rem solid var(--main-color);
 }
 
 .about-img .circle-spin {
@@ -276,10 +275,10 @@ span {
     width: 100%;
     height: 100%;
     border-radius: 50%;
-    border-top: .2rem solid var(--second-bg-color);
-    border-bottom: .2rem solid var(--second-bg-color);
-    border-left: .2rem solid var(--main-color);
-    border-right: .2rem solid var(--main-color);
+    border-top: 0.2rem solid var(--second-bg-color);
+    border-bottom: 0.2rem solid var(--second-bg-color);
+    border-left: 0.2rem solid var(--main-color);
+    border-right: 0.2rem solid var(--main-color);
     animation: aboutSpinner 8s linear infinite;
 }
 
@@ -299,7 +298,7 @@ span {
 .btn-box.btns {
     display: inline-block;
     width: 15rem;
-    border-radius: .8rem;
+    border-radius: 0.8rem;
 }
 
 .btn-box.btns a::before {
@@ -331,16 +330,16 @@ span {
 }
 
 .education-column .education-box {
-    border-left: .2rem solid var(--main-color);
+    border-left: 0.2rem solid var(--main-color);
 }
 
 .education-box .education-content {
-    position: relative;   
+    position: relative;
     padding-left: 2rem;
 }
 
 .education-box .education-content::before {
-    content: '';
+    content: "";
     position: absolute;
     top: 0;
     left: -1.1rem;
@@ -353,13 +352,13 @@ span {
 .education-content .content {
     position: relative;
     padding: 1.5rem;
-    border: .2rem solid var(--main-color);
-    border-radius: .6rem;
+    border: 0.2rem solid var(--main-color);
+    border-radius: 0.6rem;
     margin-bottom: 2rem;
 }
 
 .education-content .content::before {
-    content: '';
+    content: "";
     position: absolute;
     top: 0;
     left: 0;
@@ -367,7 +366,7 @@ span {
     height: 100%;
     background: var(--second-bg-color);
     z-index: -1;
-    transition: .5s;
+    transition: 0.5s;
 }
 
 .education-content .content:hover::before {
@@ -377,11 +376,11 @@ span {
 .education-content .content .year {
     font-size: 1.5rem;
     color: var(--main-color);
-    padding-bottom: .5rem;
+    padding-bottom: 0.5rem;
 }
 
 .education-content .content .year i {
-    padding-right: .5rem;
+    padding-right: 0.5rem;
 }
 
 .education-content .content h3 {
@@ -390,21 +389,26 @@ span {
 
 .education-content .content p {
     font-size: 1.6rem;
-    padding-top: .5rem;
+    padding-top: 0.5rem;
 }
 
 /* Detailed job descriptions */
 .education-content ul,
 .education-content ul li {
-    font-size: 1.8rem; /* Slightly larger font for list items */
-    line-height: 1.8; /* More line spacing for readability */
-    list-style-type: disc; /* Adds bullet points to lists */
-    margin-left: 2rem; /* Indents lists for clarity */
+    font-size: 1.8rem;
+    /* Slightly larger font for list items */
+    line-height: 1.8;
+    /* More line spacing for readability */
+    list-style-type: disc;
+    /* Adds bullet points to lists */
+    margin-left: 2rem;
+    /* Indents lists for clarity */
 }
 
 .tech-stack {
     background: var(--second-bg-color);
-    padding: 5rem 9%; /* Adjust padding as needed */
+    padding: 5rem 9%;
+    /* Adjust padding as needed */
     text-align: left;
     color: var(--text-color);
 }
@@ -426,7 +430,7 @@ span {
     background: var(--bg-color);
     padding: 2rem;
     border-radius: 8px;
-    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
 .tech-category h3 {
@@ -475,15 +479,15 @@ span {
 
 .skills-box .skills-content {
     position: relative;
-    border: .2rem solid var(--main-color);
-    border-radius: .6rem;
-    padding: .5rem 1.5rem;
+    border: 0.2rem solid var(--main-color);
+    border-radius: 0.6rem;
+    padding: 0.5rem 1.5rem;
     z-index: 1;
     overflow: hidden;
 }
 
 .skills-box .skills-content::before {
-    content: '';
+    content: "";
     position: absolute;
     top: 0;
     left: 0;
@@ -491,7 +495,7 @@ span {
     height: 100%;
     background: var(--bg-color);
     z-index: -1;
-    transition: .5s;
+    transition: 0.5s;
 }
 
 .skills-box .skills-content:hover::before {
@@ -514,16 +518,16 @@ span {
 
 .skills-content .progress .bar {
     height: 2.5rem;
-    border-radius: .6rem;
-    border: .2rem solid var (--main-color);
-    padding: .5rem;
+    border-radius: 0.6rem;
+    border: 0.2rem solid var (--main-color);
+    padding: 0.5rem;
     margin: 1rem 0;
 }
 
 .skills-content .progress .bar span {
     display: block;
     height: 100%;
-    border-radius: .3rem;
+    border-radius: 0.3rem;
     background: var(--main-color);
 }
 
@@ -586,11 +590,14 @@ span {
 
 .portfolio-box img {
     width: 100%;
-    height: 200px; /* Set a fixed height for all images */
-    object-fit: cover; /* Ensures the image covers the box without distortion */
+    height: 200px;
+    /* Set a fixed height for all images */
+    object-fit: cover;
+    /* Ensures the image covers the box without distortion */
     display: block;
-    border-radius: 15px; /* Align with .portfolio-box */
-    transition: .5s ease; 
+    border-radius: 15px;
+    /* Align with .portfolio-box */
+    transition: 0.5s ease;
 }
 
 .portfolio-box:hover img {
@@ -603,7 +610,7 @@ span {
     left: 0;
     width: 100%;
     height: 100%;
-    background: linear-gradient(rgba(0, 0, 0, .35), var(--second-bg-color));
+    background: linear-gradient(rgba(0, 0, 0, 0.35), var(--second-bg-color));
     display: flex;
     justify-content: center;
     align-items: center;
@@ -611,7 +618,7 @@ span {
     text-align: center;
     padding: 0 4rem;
     transform: translateY(100%);
-    transition: .5s ease;
+    transition: 0.5s ease;
 }
 
 .portfolio-box:hover .portfolio-layer {
@@ -624,7 +631,7 @@ span {
 
 .portfolio-layer p {
     font-size: 1.25rem;
-    margin: .3rem 0 1rem;
+    margin: 0.3rem 0 1rem;
 }
 
 .project-links {
@@ -649,28 +656,37 @@ span {
 
 .portfolio-container {
     display: grid;
-    grid-template-columns: repeat(3, 1fr); /* Three columns */
-    justify-content: center; /* Center grid items */
+    grid-template-columns: repeat(3, 1fr);
+    /* Three columns */
+    justify-content: center;
+    /* Center grid items */
     gap: 2.5rem;
-    padding: 0 5rem; /* Adjust padding as needed */
+    padding: 0 5rem;
+    /* Adjust padding as needed */
 }
 
 .portfolio-box {
-    background: var(--second-bg-color); /* Optional: gives a background to the boxes */
-    border-radius: 15px; /* Rounded corners */
+    background: var(--second-bg-color);
+    /* Optional: gives a background to the boxes */
+    border-radius: 15px;
+    /* Rounded corners */
     overflow: hidden;
-    transition: transform .3s ease-in-out; /* Smooth transform effect */
+    transition: transform 0.3s ease-in-out;
+    /* Smooth transform effect */
 }
 
 @media (max-width: 1024px) {
     .portfolio-container {
-        grid-template-columns: repeat(2, 1fr); /* Two columns for smaller screens */
+        grid-template-columns: repeat(2, 1fr);
+        /* Two columns for smaller screens */
     }
 }
 
 @media (max-width: 768px) {
     .portfolio-container {
-        grid-template-columns: repeat(1, 1fr); /* Single column for mobile screens */
+        grid-template-columns: repeat(1,
+                1fr);
+        /* Single column for mobile screens */
     }
 }
 
@@ -680,23 +696,30 @@ span {
     align-items: center;
     flex-wrap: wrap;
     gap: 2.5rem;
-    padding: 0 5rem; /* Adjust padding as needed */
+    padding: 0 5rem;
+    /* Adjust padding as needed */
 }
 
 .publication-box {
-    background: var(--second-bg-color); /* Optional: gives a background to the boxes */
-    border-radius: 15px; /* Rounded corners */
+    background: var(--second-bg-color);
+    /* Optional: gives a background to the boxes */
+    border-radius: 15px;
+    /* Rounded corners */
     overflow: hidden;
-    transition: transform .3s ease-in-out; /* Smooth transform effect */
+    transition: transform 0.3s ease-in-out;
+    /* Smooth transform effect */
 }
 
 .publication-box img {
     width: 100%;
-    height: 200px; /* Set a fixed height for all publication images */
-    object-fit: cover; /* Ensures the image covers the box without distortion */
+    height: 200px;
+    /* Set a fixed height for all publication images */
+    object-fit: cover;
+    /* Ensures the image covers the box without distortion */
     display: block;
-    border-radius: 15px; /* Align with .publication-box */
-    transition: .5s ease; 
+    border-radius: 15px;
+    /* Align with .publication-box */
+    transition: 0.5s ease;
 }
 
 .publication-box:hover img {
@@ -705,13 +728,16 @@ span {
 
 @media (max-width: 1024px) {
     .publication-container {
-        grid-template-columns: repeat(2, 1fr); /* Two columns for smaller screens */
+        grid-template-columns: repeat(2, 1fr);
+        /* Two columns for smaller screens */
     }
 }
 
 @media (max-width: 768px) {
     .publication-container {
-        grid-template-columns: repeat(1, 1fr); /* Single column for mobile screens */
+        grid-template-columns: repeat(1,
+                1fr);
+        /* Single column for mobile screens */
     }
 }
 
@@ -737,7 +763,7 @@ span {
 .contact form .input-box .input-field {
     position: relative;
     width: 49%;
-    margin: .8rem 0;
+    margin: 0.8rem 0;
 }
 
 .contact form .input-box .input-field input,
@@ -748,14 +774,14 @@ span {
     font-size: 1.6rem;
     color: var(--text-color);
     background: transparent;
-    border-radius: .6rem;
-    border: .2rem solid var(--main-color);
-} 
+    border-radius: 0.6rem;
+    border: 0.2rem solid var(--main-color);
+}
 
 .contact form .input-box .input-field input::placeholder,
 .contact form .textarea-field textarea::placeholder {
     color: var(--text-color);
-}   
+}
 
 .contact form .focus {
     position: absolute;
@@ -764,9 +790,9 @@ span {
     width: 0;
     height: 100%;
     background: var(--second-bg-color);
-    border-radius: .6rem;
+    border-radius: 0.6rem;
     z-index: -1;
-    transition: .5s;
+    transition: 0.5s;
 }
 
 .contact form .input-box .input-field input:focus~.focus,
@@ -776,10 +802,9 @@ span {
     width: 100%;
 }
 
-
 .contact form .textarea-field {
     position: relative;
-    margin: .8rem 0 2.7rem;
+    margin: 0.8rem 0 2.7rem;
     display: flex;
 }
 
@@ -808,10 +833,10 @@ span {
     display: inline-flex;
     justify-content: center;
     align-items: center;
-    padding: .8rem;
+    padding: 0.8rem;
     background: var(--main-color);
-    border: .2rem solid var(--main-color);
-    border-radius: .6rem;
+    border: 0.2rem solid var(--main-color);
+    border-radius: 0.6rem;
 }
 
 .footer-iconTop a i {
@@ -852,7 +877,7 @@ span {
     html {
         overflow-x: hidden;
     }
-    
+
     .portfolio-layer h4 {
         font-size: 2rem;
     }
@@ -871,7 +896,7 @@ span {
     html {
         width: 100vw;
         overflow-x: hidden;
-    } 
+    }
 
     .header {
         background: var(--bg-color);
@@ -889,14 +914,14 @@ span {
         width: 100%;
         padding: 1rem 4%;
         background: var(--bg-color);
-        box-shadow: 0 .5rem 1rem rgba(0, 0, 0, .2);
-        transition: .30s ease;
-        transition-delay: .30s;
+        box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.2);
+        transition: 0.3s ease;
+        transition-delay: 0.3s;
     }
 
     .navbar.active {
         left: 0;
-        transition-delay: .30s;
+        transition-delay: 0.3s;
     }
 
     .navbar a {
@@ -912,7 +937,8 @@ span {
         max-height: 200vh;
     }
 
-    .home-content h1, .home-content p {
+    .home-content h1,
+    .home-content p {
         text-align: center;
     }
 
@@ -931,7 +957,7 @@ span {
         position: static;
         margin: 5rem auto;
     }
- 
+
     .home .home-info .home-content .btn-box {
         margin: 0 auto;
     }
@@ -993,7 +1019,7 @@ span {
     .portfolio-layer h4 {
         font-size: 2.5rem;
     }
-    
+
     .portfolio-layer p {
         margin-top: 2rem;
         font-size: 2rem;
@@ -1017,7 +1043,7 @@ span {
     .publication-layer h4 {
         font-size: 2.5rem;
     }
-    
+
     .publication-layer p {
         margin-top: 2rem;
         font-size: 2rem;
@@ -1049,57 +1075,87 @@ span {
     color: var(--text-color);
 }
 
-.footer .btn-box, .footer .home-sci {
+.footer .btn-box,
+.footer .home-sci {
     display: flex;
     align-items: center;
-    gap: 20px;  /* Spacing between icons and the button */
+    gap: 20px;
+    /* Spacing between icons and the button */
 }
 
-.footer .btn-box a, .footer .home-sci a {
+.footer .btn-box a,
+.footer .home-sci a {
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 40px;  /* Size of the icons */
-    height: 40px;  /* Size of the icons */
-    border-radius: 50%;  /* Makes the icons round */
-    background-color: #00abf0;  /* Blue background for the icons */
-    color: var(--bg-color);  /* Text color inside the icons */
-    font-size: 20px;  /* Icon font size */
-    border: none;  /* No border for the icons */
-    text-decoration: none;  /* No underline for links */
+    width: 40px;
+    /* Size of the icons */
+    height: 40px;
+    /* Size of the icons */
+    border-radius: 50%;
+    /* Makes the icons round */
+    background-color: #00abf0;
+    /* Blue background for the icons */
+    color: var(--bg-color);
+    /* Text color inside the icons */
+    font-size: 20px;
+    /* Icon font size */
+    border: none;
+    /* No border for the icons */
+    text-decoration: none;
+    /* No underline for links */
 }
 
 .footer .btn-box a {
-    width: auto;  /* Auto width for the resume button */
-    padding: 10px 20px;  /* Padding inside the resume button */
-    border-radius: 20px;  /* Rounded corners for the button */
-    background: transparent;  /* Transparent background for the button */
-    border: 2px solid var(--main-color);  /* Blue border for the button */
-    font-size: 16px;  /* Font size for the button text */
-    color: var(--main-color);  /* Blue text color for the button */
+    width: auto;
+    /* Auto width for the resume button */
+    padding: 10px 20px;
+    /* Padding inside the resume button */
+    border-radius: 20px;
+    /* Rounded corners for the button */
+    background: transparent;
+    /* Transparent background for the button */
+    border: 2px solid var(--main-color);
+    /* Blue border for the button */
+    font-size: 16px;
+    /* Font size for the button text */
+    color: var(--main-color);
+    /* Blue text color for the button */
 }
 
-.footer .btn-box a:hover, .footer .home-sci a:hover {
-    background-color: var(--main-color);  /* Blue background on hover */
-    color: var(--bg-color);  /* White text on hover */
+.footer .btn-box a:hover,
+.footer .home-sci a:hover {
+    background-color: var(--main-color);
+    /* Blue background on hover */
+    color: var(--bg-color);
+    /* White text on hover */
 }
 
 .footer p {
-    flex-grow: 1;  /* Allows the copyright text to take available space */
-    text-align: center;  /* Centers the copyright text */
-    margin: 0 20px;  /* Margin around the text */
+    flex-grow: 1;
+    /* Allows the copyright text to take available space */
+    text-align: center;
+    /* Centers the copyright text */
+    margin: 0 20px;
+    /* Margin around the text */
 }
 
 .footer a {
-    text-decoration: none;  /* Ensures links are not underlined */
+    text-decoration: none;
+    /* Ensures links are not underlined */
 }
 
 @media (max-width: 768px) {
     .footer {
-        flex-direction: column;  /* Stacks the elements vertically on small screens */
-        align-items: center;  /* Aligns items centrally */
+        flex-direction: column;
+        /* Stacks the elements vertically on small screens */
+        align-items: center;
+        /* Aligns items centrally */
     }
-    .footer .btn-box, .footer .home-sci {
-        justify-content: center;  /* Centers the buttons and icons horizontally */
+
+    .footer .btn-box,
+    .footer .home-sci {
+        justify-content: center;
+        /* Centers the buttons and icons horizontally */
     }
 }
