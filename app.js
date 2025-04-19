@@ -18,7 +18,7 @@ document.addEventListener("DOMContentLoaded", function () {
     const body = encodeURIComponent(
       "Dear Yudheksha,\n\nWe are pleased to extend the following offer to you..."
     );
-    this.href = `mailto:yugokavi@iu.edu?subject=${subject}&body=${body}`;
+    this.href = `mailto:yudithaagk@gmail.com?subject=${subject}&body=${body}`;
 
     // Log or handle the click event as needed
     console.log("Contact Me button was clicked.");
@@ -62,6 +62,8 @@ const typed = new Typed(".multiple-text", {
   strings: [
     "Coder",
     "Software Developer",
+    "Software Engineer",
+    "Business Intelligence Analyst",
     "Data Analyst",
   ],
 
