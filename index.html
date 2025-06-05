@@ -109,18 +109,26 @@
                         </h3>
                         <p>
                         <ul>
-                            <li>Developed a Zoom transcript summarizer using Streamlit, Whisper, OpenAI, Hugging Face,
-                                and spaCy to generate summaries, extract action
-                                items, and analyze sentiment, resulting in an 80% reduction in manual meeting
-                                documentation.</li>
-                            <li>Built a Python and Pandas pipeline to classify 1,000+ S&P Global transcripts, automate
-                                metadata extraction, and cut manual processing by 50%</li>
-                            <li>Executed SQL queries to extract financial Q&A data; used Excel (Pivot Tables, VLOOKUP
-                                ) to structure responses for GPT-based analysis,
-                                improving data accuracy by 20%.
-                            </li>
-                            <li>Analyzed 25 communication traits using Python and Excel, uncovered links to stock
-                                volatility, and cut data analysis time by 30%</li>
+                            <li>Developed an AI-driven meeting assistant by integrating Zoom’s transcript webhook with a
+                                FastAPI service to capture transcript URLs and participant emails in real time.</li>
+                            <li>Enqueued each transcript event into a Redis-backed RQ queue for asynchronous processing
+                                by background workers.</li>
+                            <li>Implemented a Python worker to fetch the VTT file, generate concise summaries using
+                                T5/GPT-4, and email action points via SendGrid, eliminating 80% of manual note-taking
+                                and boosting post-meeting productivity by approximately 40%, according to an internal
+                                user survey.</li>
+                            <li>Containerized the entire system with Docker Compose and deployed it on GCP Cloud Run via
+                                Artifact Registry for scalable, low-latency performance.</li>
+                            <li>Built a Python and pandas ETL pipeline to process 1,000+ S&amp;P Global transcripts,
+                                classify content, extract metadata, and integrate data into PostgreSQL, reducing manual
+                                processing by 50%.</li>
+                            <li>Extracted financial Q&amp;A data using advanced SQL queries and structured it in Excel
+                                (Pivot Tables, VLOOKUP) for GPT-based analysis; improved data accuracy by 20%.</li>
+                            <li>Automated analysis of 25 communication traits using Python and Excel, uncovering links
+                                to stock volatility and reducing analysis time by 30%.</li>
+                            <li>Created Tableau dashboards with calculated fields, KPIs, and forecasting to support
+                                stakeholder reporting and improve turnaround time by 30%.</li>
+
                         </ul>
                         </p>
                     </div>
