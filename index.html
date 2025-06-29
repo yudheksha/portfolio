@@ -109,27 +109,15 @@
                         </h3>
                         <p>
                         <ul>
-                            <li>Developed an AI-driven meeting assistant by integrating Zoom’s transcript webhook with a
-                                FastAPI service to capture transcript URLs and participant emails in real time.</li>
-                            <li>Enqueued each transcript event into a Redis-backed RQ queue for asynchronous processing
-                                by background workers.</li>
-                            <li>Implemented a Python worker to fetch the VTT file, generate concise summaries using
-                                T5/GPT-4, and email action points via SendGrid, eliminating 80% of manual note-taking
-                                and boosting post-meeting productivity by approximately 40%, according to an internal
-                                user survey.</li>
-                            <li>Containerized the entire system with Docker Compose and deployed it on GCP Cloud Run via
-                                Artifact Registry for scalable, low-latency performance.</li>
                             <li>Built a Python and pandas ETL pipeline to process 1,000+ S&amp;P Global transcripts,
                                 classify content, extract metadata, and integrate data into PostgreSQL, reducing manual
                                 processing by 50%.</li>
                             <li>Extracted financial Q&amp;A data using advanced SQL queries and structured it in Excel
-                                (Pivot Tables, VLOOKUP) for GPT-based analysis; improved data accuracy by 20%.</li>
-                            <li>Automated analysis of 25 communication traits using Python and Excel, uncovering links
-                                to stock volatility and reducing analysis time by 30%.</li>
-                            <li>Created Tableau dashboards with calculated fields, KPIs, and forecasting to support
-                                stakeholder reporting and improve turnaround time by 30%.</li>
-
+                                (Pivot Tables, VLOOKUP) for LLM-based analysis, improving data accuracy by 20%.</li>
+                            <li>Automated analysis of 25 linguistic traits using Python and Excel, uncovering links to
+                                stock volatility and reducing analysis time by 30%.</li>
                         </ul>
+
                         </p>
                     </div>
                 </div>
@@ -277,10 +265,12 @@
                 <ul>
                     <li>Python</li>
                     <li>Java</li>
-                    <li>JavaScript</li>
-                    <li>C</li>
                     <li>C++</li>
+                    <li>JavaScript</li>
+                    <li>TypeScript</li>
                     <li>R</li>
+                    <li>SQL</li>
+                    <li>C</li>
                 </ul>
             </div>
             <div class="tech-category">
@@ -288,30 +278,30 @@
                 <ul>
                     <li>HTML</li>
                     <li>CSS</li>
-                    <li>React JS</li>
-                    <li>Express JS</li>
-                    <li>Node JS</li>
-                    <li>Flask</li>
+                    <li>React.js</li>
+                    <li>Next.js</li>
+                    <li>Node.js</li>
+                    <li>Express.js</li>
                     <li>Firebase</li>
+                    <li>REST APIs</li>
                     <li>Render</li>
-                    <li>Tailwind CSS</li>
-                    <li>RESTful APIs</li>
                 </ul>
             </div>
             <div class="tech-category">
                 <h3>Databases</h3>
                 <ul>
                     <li>MySQL</li>
-                    <li>MongoDB</li>
                     <li>PostgreSQL</li>
+                    <li>MongoDB</li>
+                    <li>Firestore</li>
                 </ul>
             </div>
             <div class="tech-category">
                 <h3>Data Visualization</h3>
                 <ul>
-                    <li>Power BI</li>
                     <li>Tableau</li>
                     <li>Excel</li>
+                    <li>Power BI</li>
                 </ul>
             </div>
             <div class="tech-category">
@@ -324,13 +314,14 @@
             <div class="tech-category">
                 <h3>Tools</h3>
                 <ul>
-                    <li>Postman</li>
-                    <li>GitHub</li>
+                    <li>Jupyter Notebook</li>
+                    <li>Google Colab</li>
                     <li>Git</li>
+                    <li>GitHub</li>
                     <li>Docker</li>
                     <li>Kubernetes</li>
-                    <li>Jira</li>
                     <li>Jenkins (CI/CD)</li>
+                    <li>Postman</li>
                 </ul>
             </div>
             <div class="tech-category">
@@ -339,16 +330,20 @@
                     <li>TensorFlow</li>
                     <li>Keras</li>
                     <li>PyTorch</li>
-                    <li>Pandas</li>
+                    <li>Scikit-learn</li>
+                    <li>pandas</li>
                     <li>NumPy</li>
                     <li>Matplotlib</li>
-                    <li>Scikit-learn</li>
-                    <li>SciPy</li>
                     <li>Seaborn</li>
+                    <li>SciPy</li>
+                    <li>Regression</li>
+                    <li>Classification Models</li>
+                    <li>Deep Learning (CNN, RNN, Autoencoders)</li>
                 </ul>
             </div>
         </div>
     </section>
+
 
     <!-- portfolio section design -->
     <section class="portfolio" id="portfolio">
@@ -418,15 +413,17 @@
             </div>
 
             <div class="portfolio-box">
-                <img src="./assets/Sales.png" alt="Sales and Customer Performance Analytics Dashboard">
+                <img src="./assets/summarizer-2.png" alt="AI Summarizer Application">
                 <div class="portfolio-layer">
-                    <h4>Sales and Customer Performance Analytics Dashboard</h4>
+                    <h4>AI Summarizer Application</h4>
                     <div class="project-links">
-                        <a href="https://github.com/yudheksha/Sales-and-Customer-Performance-Analytics-Dashboard"
-                            target="_blank"><i class='bx bxl-github'></i></a>
+                        <a href="https://github.com/yudheksha/AI-Summarizer-Application" target="_blank">
+                            <i class='bx bxl-github'></i>
+                        </a>
                     </div>
                 </div>
             </div>
+
 
         </div>
     </section>
