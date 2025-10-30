@@ -61,7 +61,6 @@ ScrollReveal().reveal(".bottom", { origin: "bottom" });
 const typed = new Typed(".multiple-text", {
   strings: [
     "Coder",
-    "Software Developer",
     "Software Engineer",
     "Business Intelligence Analyst",
     "Data Analyst",
