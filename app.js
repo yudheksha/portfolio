@@ -60,10 +60,10 @@ ScrollReveal().reveal(".bottom", { origin: "bottom" });
 
 const typed = new Typed(".multiple-text", {
   strings: [
-    "Coder",
-    "Software Engineer",
-    "Business Intelligence Analyst",
     "Data Analyst",
+    "Business Analyst",
+    "Business Intelligence Analyst",
+    "Software Engineer",
   ],
 
   typeSpeed: 100,
