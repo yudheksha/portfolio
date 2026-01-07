@@ -128,9 +128,11 @@ section {
 .btn-box {
     position: relative;
     display: flex;
-    justify-content: space-between;
-    width: 52rem;
-    /* Enough space for three buttons */
+    justify-content: flex-start;
+    /* or center */
+    gap: 4rem;
+    width: auto;
+    /* remove the 52rem */
     height: 5rem;
 }
 
@@ -184,11 +186,16 @@ section {
 .home-sci {
     position: absolute;
     bottom: 4rem;
-    width: 22rem;
+
     display: flex;
-    justify-content: space-between;
-    gap: 1rem;
+    justify-content: flex-start;
+    /* or center */
+    gap: 10rem;
+    /* increase this for more space */
+    width: auto;
+    /* remove the 22rem gap behavior */
 }
+
 
 .home-sci a {
     position: relative;
