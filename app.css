@@ -130,7 +130,7 @@ section {
     display: flex;
     justify-content: flex-start;
     /* or center */
-    gap: 4rem;
+    gap: 10rem;
     width: auto;
     /* remove the 52rem */
     height: 5rem;
