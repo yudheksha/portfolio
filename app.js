@@ -63,7 +63,8 @@ const typed = new Typed(".multiple-text", {
     "Data Analyst",
     "Business Analyst",
     "Business Intelligence Analyst",
-    "Data Engineer",
+    "Reporting Analyst",
+    "Insights Analyst"
   ],
 
   typeSpeed: 100,
