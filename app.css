@@ -95,7 +95,7 @@ section {
 
 .my-img img {
     margin: 0 auto;
-    width: 30rem;
+    width: 40rem;
     border-radius: 50%;
 }
 
@@ -130,7 +130,7 @@ section {
     display: flex;
     justify-content: flex-start;
     /* or center */
-    gap: 8rem;
+    gap: 12rem;
     width: auto;
     /* remove the 52rem */
     height: 5rem;
@@ -190,7 +190,7 @@ section {
     display: flex;
     justify-content: flex-start;
     /* or center */
-    gap: 8rem;
+    gap: 12rem;
     /* increase this for more space */
     width: auto;
     /* remove the 22rem gap behavior */
@@ -261,8 +261,8 @@ span {
 
 .about-img {
     position: relative;
-    width: 30rem;
-    height: 30rem;
+    width: 40rem;
+    height: 40rem;
     border-radius: 50;
     display: flex;
     justify-content: center;
