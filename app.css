@@ -190,7 +190,7 @@ section {
     display: flex;
     justify-content: flex-start;
     /* or center */
-    gap: 15rem;
+    gap: 18rem;
     /* increase this for more space */
     width: auto;
     /* remove the 22rem gap behavior */
